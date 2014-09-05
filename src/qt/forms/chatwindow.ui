@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChatWindowClass</class>
+ <widget class="QWidget" name="ChatWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <widget class="QWebView" name="webView_2">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>150</y>
+      <width>611</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://www.goalco.in/facebook.html</string>
+     </url>
+    </property>
+    <property name="zoomFactor">
+     <double>1.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QWebView" name="webView">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>301</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="url">
+     <url>
+      <string>http://www.goalco.in/twitter.html</string>
+     </url>
+    </property>
+    <property name="zoomFactor">
+     <double>1.000000000000000</double>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>20</y>
+      <width>461</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Follow US!</string>
+    </property>
+   </widget>
+  </widget>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionCloseTab">
+   <property name="text">
+    <string>Fermer l'onglet</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKit/QWebView</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
